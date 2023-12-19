@@ -10,9 +10,7 @@ let isMatch = false;
 
 app.use(express.json());
 // Enable CORS
-app.use(cors({
-  origin: 'https://vijayaditya-portfolio.netlify.app',
-}));
+app.use(cors());
 app.use(bodyParser.json());
 
 app.post('/verifyPassword', async (req, res) => {
